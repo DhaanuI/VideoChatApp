@@ -3,6 +3,12 @@ const http = require('http');
 const socketIO = require('socket.io');
 
 const app = express();
+
+// home route
+app.get("/", async (req, res) => {
+    res.status(200).send("Welcome to Backend");
+})
+
 const server = http.createServer(app);
 const io = socketIO(server);
 require("dotenv").config()

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat and Chat App</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1>Let's Chat</h1>
+        </header>
+        <main class="join-main">
+            <form action="./view/chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+            
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="room1">Room 1</option>
+                    </select>
+                </div>
+
+                <button id="createbtn">Create ChatRoom</button>
+                <button type="submit" class="btn">Join ChatRoom</button>
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
+<script src="./js/main.js"></script>

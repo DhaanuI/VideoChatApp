@@ -21,12 +21,13 @@ a {
 
 #createbtn {
     width: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 10px 20px;
     background: #1877f2;
     color: white;
     border: 0;
     font-size: 17px;
+    cursor: not-allowed;
 }
 
 .btn {
@@ -36,6 +37,24 @@ a {
     color: white;
     border: 0;
     font-size: 17px;
+}
+
+#toggleButtons{
+    margin-left:105px
+}
+
+#video-grid{
+    margin-left:96px
+}
+
+#leave-btn{
+    background: rgb(233, 51, 51);
+}
+
+#leave-btn:hover{
+    background: white;
+    color: rgb(233, 51, 51);
+    font-weight: bold;
 }
 
 /* Join Page */
@@ -91,6 +110,12 @@ a {
 .join-main .btn {
     margin-top: 20px;
     width: 100%;
+}
+
+.join-main .btn:hover {
+    color: #50db34;
+    background-color: white;
+    font-weight: bold;
 }
 
 
@@ -186,6 +211,12 @@ a {
     flex: 1;
 }
 
+#chat-form .btn:hover{
+    color: #50db34;
+    background-color: white;
+    font-weight: bold;
+}
+
 
 .sent_msg {
     float: right;
@@ -206,6 +237,8 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius:20px;
+    padding:10px;
 }
 
 

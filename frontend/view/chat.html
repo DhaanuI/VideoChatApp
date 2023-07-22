@@ -18,13 +18,13 @@
     <div class="chat-container">
         <header class="chat-header">
             <h1> Let's Chat</h1>
-            <a id="leave-btn" class="btn">Go out</a>
+            <a id="leave-btn" class="btn">Leave</a>
         </header>
         <main class="chat-main">
             <div class="chat-sidebar">
                 <h3> Room Name:</h3>
                 <h2 id="room-name"></h2>
-                <h3> Users</h3>
+                <h3> Users in this room:</h3>
                 <ul id="users"></ul>
             </div>
             <div class="chat-messages"></div>
@@ -37,15 +37,19 @@
         </div>
     </div>
 
+    <div id="toggleButtons">
+        <button id="toggle-video-button">Start/Stop Video</button>
+        <br> <br>
+        <button id="toggle-audio-button">Mute/UnMute</button>
+
+    </div>
+    <br>
 
     <div id="video-grid"></div>
 
     <br>
 
-  
-    <button id="toggle-video-button" >Start/Stop Video</button>
-    <br> <br>
-    <button id="toggle-audio-button">Mute/UnMute</button>
+
 
 
     <script src="../js/main.js"></script>

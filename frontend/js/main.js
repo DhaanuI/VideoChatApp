@@ -10,7 +10,9 @@ const room = urlParams.get("room")
 
 //console.log(username, room)
 
-const socket = io("https://videochat-nxaa.onrender.com/", { transports: ["websocket"] });
+const socket = io("https://videochat-nxaa.onrender.com/",    // for cors
+    { transports: ["websocket"] }
+);
 
 socket.emit("joinRoom", { username, room });
 

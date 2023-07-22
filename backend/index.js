@@ -1,8 +1,10 @@
 const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
+const cors = require(cors())
 
 const app = express();
+app.use(cors())
 
 // home route
 app.get("/", async (req, res) => {
